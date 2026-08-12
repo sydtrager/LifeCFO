@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function LegalPage({title,children}:{title:string;children:React.ReactNode}){return <><nav className="public-nav"><Link className="brand" href="/"><span>LC</span> LifeCFO</Link><Link href="/dashboard">Demo dashboard</Link></nav><main className="legal"><p className="kicker">LIFE CFO · LAST UPDATED JULY 24, 2026</p><h1>{title}</h1>{children}<p><b>Questions?</b> Contact the operator identified in your deployment. Production operators must insert their legal entity and contact details before launch.</p></main></>}
