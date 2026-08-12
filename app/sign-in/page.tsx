@@ -1,2 +1,2 @@
-import Link from "next/link";
-export default function SignIn(){return <main className="auth-page"><form className="auth-card" action="/dashboard"><Link className="brand" href="/"><span>LC</span> LifeCFO</Link><h1>Welcome back.</h1><p>Sign in to continue your financial plan. Demo mode works without credentials.</p><label htmlFor="email">Email address</label><input id="email" type="email" placeholder="you@example.com"/><label htmlFor="password">Password</label><input id="password" type="password" placeholder="••••••••"/><button className="button" type="submit">Sign in</button><small><Link href="/dashboard">Explore the synthetic demo instead</Link> · <Link href="/sign-up">Create account</Link></small></form></main>}
+import { AuthForm } from "@/components/AuthForm";
+export default function SignIn(){return <AuthForm mode="sign-in"/>}
